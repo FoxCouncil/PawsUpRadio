@@ -59,4 +59,5 @@ fastlane/screenshots
 
 iOSInjectionProject/
 
+.DS_Store
 secret.h

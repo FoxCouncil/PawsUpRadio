@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Eo3-sg-NCW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--App-->
+        <scene sceneID="10C-Dl-hfX">
+            <objects>
+                <tabBarController title="App" modalTransitionStyle="crossDissolve" id="Eo3-sg-NCW" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="dl7-Ra-y3w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="36X-Ku-MX6"/>
+                        <segue destination="ypn-HA-bAu" kind="relationship" relationship="viewControllers" id="d3S-h3-bVx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUy-dp-abg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1077" y="384"/>
+        </scene>
+        <!--Player-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Paws Up Radio" modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" userLabel="Player" customClass="PlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="rLc-fW-Zpp" userLabel="Background Image">
+                                <rect key="frame" x="-1" y="-1" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paws Up Radio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF2-bM-AqY">
+                                <rect key="frame" x="52" y="32" width="270" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="au8-kH-Uuw"/>
+                                    <constraint firstAttribute="width" constant="270" id="hXo-0R-915"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4t-lw-yn5" userLabel="Station Name">
+                                <rect key="frame" x="-113" y="83" width="600" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4un-PW-H99"/>
+                                    <constraint firstAttribute="width" constant="600" id="Rr5-av-RyT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="126" translatesAutoresizingMaskIntoConstraints="NO" id="Hhr-eH-2hB" userLabel="Song Title">
+                                <rect key="frame" x="10" y="145" width="355" height="65"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="lNu-aB-hFF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWw-rZ-owL" userLabel="Play Pause Button">
+                                <rect key="frame" x="124" y="269" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="ToJ-gg-Frb"/>
+                                    <constraint firstAttribute="height" constant="128" id="ZbQ-V1-8aQ"/>
+                                </constraints>
+                                <state key="normal" image="PlayBTN"/>
+                                <connections>
+                                    <action selector="playPauseButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EVj-tR-Suo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rLc-fW-Zpp" secondAttribute="trailing" constant="1" id="0ju-C0-JMr"/>
+                            <constraint firstAttribute="top" secondItem="YF2-bM-AqY" secondAttribute="top" constant="-32" id="0xX-Oo-5VI"/>
+                            <constraint firstAttribute="top" secondItem="y4t-lw-yn5" secondAttribute="top" constant="-83" id="I10-h7-gEL"/>
+                            <constraint firstAttribute="bottom" secondItem="rLc-fW-Zpp" secondAttribute="bottom" constant="1" id="IV2-BF-fa7"/>
+                            <constraint firstAttribute="top" secondItem="Hhr-eH-2hB" secondAttribute="top" constant="-145" id="Knm-EK-jqk"/>
+                            <constraint firstAttribute="centerX" secondItem="y4t-lw-yn5" secondAttribute="centerX" id="cvR-MX-t8K"/>
+                            <constraint firstAttribute="centerX" secondItem="aWw-rZ-owL" secondAttribute="centerX" id="cwX-Jk-O9d"/>
+                            <constraint firstAttribute="top" secondItem="rLc-fW-Zpp" secondAttribute="top" constant="1" id="dcv-m9-5un"/>
+                            <constraint firstItem="y4t-lw-yn5" firstAttribute="centerX" secondItem="YF2-bM-AqY" secondAttribute="centerX" id="gMB-sz-S28"/>
+                            <constraint firstAttribute="leading" secondItem="rLc-fW-Zpp" secondAttribute="leading" constant="1" id="hD3-5A-HNm"/>
+                            <constraint firstAttribute="trailing" secondItem="Hhr-eH-2hB" secondAttribute="trailing" constant="10" id="iY2-nX-C7e"/>
+                            <constraint firstAttribute="leading" secondItem="Hhr-eH-2hB" secondAttribute="leading" constant="-10" id="yKr-0T-JH7"/>
+                            <constraint firstAttribute="centerY" secondItem="aWw-rZ-owL" secondAttribute="centerY" constant="1" id="zc3-G5-Nb7"/>
+                            <constraint firstAttribute="centerX" secondItem="YF2-bM-AqY" secondAttribute="centerX" id="zuG-WW-V2U"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Player" image="music_note" id="moy-3z-J7A"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="rLc-fW-Zpp" id="TjJ-Sv-w96"/>
+                        <outlet property="playPauseButton" destination="aWw-rZ-owL" id="Gwl-K0-ifw"/>
+                        <outlet property="songInfoLabel" destination="Hhr-eH-2hB" id="O7E-Qa-Lb0"/>
+                        <outlet property="songTitleLeftContraint" destination="yKr-0T-JH7" id="V1c-l4-7tm"/>
+                        <outlet property="songTitleRightContraint" destination="iY2-nX-C7e" id="F6g-T3-Yak"/>
+                        <outlet property="stationNameLabel" destination="y4t-lw-yn5" id="ril-oG-klp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-144.80000000000001" y="169.56521739130437"/>
+        </scene>
+        <!--Options-->
+        <scene sceneID="3K5-FB-J0L">
+            <objects>
+                <tableViewController id="ypn-HA-bAu" customClass="OptionsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="OEi-z0-OTp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="ADVERTISEMENT" id="4gE-YB-YeF">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="PURSETTINGSROW2_1" rowHeight="50" id="VHp-W7-b6b">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VHp-W7-b6b" id="YFI-1q-mY2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.14649863541126251" green="0.14649863541126251" blue="0.14649863541126251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="General Options" id="eNF-BU-YgY">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PURSETTINGSROW1_1" rowHeight="79" id="Irs-al-wjW">
+                                        <rect key="frame" x="0.0" y="155" width="375" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Irs-al-wjW" id="oxf-gI-2Qt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force Reconnection On WiFi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bs-BI-qNn">
+                                                    <rect key="frame" x="14" y="13" width="233" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="233" id="M2z-2G-0e8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0l-ZG-qpk">
+                                                    <rect key="frame" x="318" y="8" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="reconnectOnWiFiSwitchAction:" destination="ypn-HA-bAu" eventType="valueChanged" id="3gR-Vc-AKU"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7H-7h-0HJ">
+                                                    <rect key="frame" x="14" y="35" width="353" height="35"/>
+                                                    <string key="text">When switching from 3G/LTE
+to WiFi force a reconnection.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50042766332626343" green="0.50042766332626343" blue="0.50042766332626343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="G7H-7h-0HJ" firstAttribute="top" secondItem="9bs-BI-qNn" secondAttribute="bottom" constant="1" id="5Ow-Lw-sdN"/>
+                                                <constraint firstAttribute="centerY" secondItem="9bs-BI-qNn" secondAttribute="centerY" constant="15.5" id="BAf-4a-6WN"/>
+                                                <constraint firstAttribute="centerY" secondItem="p0l-ZG-qpk" secondAttribute="centerY" constant="15.5" id="CUB-0q-4uX"/>
+                                                <constraint firstItem="G7H-7h-0HJ" firstAttribute="bottom" secondItem="oxf-gI-2Qt" secondAttribute="bottomMargin" id="Ff7-Yn-TL0"/>
+                                                <constraint firstItem="G7H-7h-0HJ" firstAttribute="trailing" secondItem="oxf-gI-2Qt" secondAttribute="trailingMargin" id="H4e-M4-GoN"/>
+                                                <constraint firstItem="G7H-7h-0HJ" firstAttribute="top" secondItem="9bs-BI-qNn" secondAttribute="bottom" constant="1" id="Hp1-9b-JaQ"/>
+                                                <constraint firstItem="p0l-ZG-qpk" firstAttribute="trailing" secondItem="oxf-gI-2Qt" secondAttribute="trailingMargin" id="JhA-gT-ULz"/>
+                                                <constraint firstItem="G7H-7h-0HJ" firstAttribute="leading" secondItem="oxf-gI-2Qt" secondAttribute="leadingMargin" constant="6" id="UUE-tu-r6o"/>
+                                                <constraint firstItem="9bs-BI-qNn" firstAttribute="leading" secondItem="oxf-gI-2Qt" secondAttribute="leadingMargin" constant="6" id="WSl-UF-uHc"/>
+                                                <constraint firstItem="G7H-7h-0HJ" firstAttribute="trailing" secondItem="oxf-gI-2Qt" secondAttribute="trailingMargin" id="zsY-7t-pvu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Personalization Options" id="imj-Pr-a2I">
+                                <cells>
+                                    <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="PURSETTINGSROW2_1" textLabel="ttH-Nu-czJ" style="IBUITableViewCellStyleDefault" id="iuk-C7-Y3j">
+                                        <rect key="frame" x="0.0" y="283" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iuk-C7-Y3j" id="xCk-4N-fqO">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Select Background Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ttH-Nu-czJ">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Statistics" footerTitle="Paws Up Radio - V2.5 - http://pawsupradio.com/" id="Xjm-Pb-DAO">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="PURSETTINGSROW3_1" textLabel="4ot-7y-KBA" detailTextLabel="DRO-Ft-QIi" style="IBUITableViewCellStyleValue1" id="PBy-Px-ylY">
+                                        <rect key="frame" x="0.0" y="383" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PBy-Px-ylY" id="9EE-g4-Few">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Current Transfer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4ot-7y-KBA">
+                                                    <rect key="frame" x="15" y="12" width="120" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="0.00 B" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DRO-Ft-QIi">
+                                                    <rect key="frame" x="313" y="12" width="47" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="PURSETTINGSROW3_2" textLabel="LwD-0P-YL2" detailTextLabel="dAl-X4-c7g" style="IBUITableViewCellStyleValue1" id="bat-1v-Fpm">
+                                        <rect key="frame" x="0.0" y="427" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bat-1v-Fpm" id="ecu-c8-9b4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Lifetime Transfer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LwD-0P-YL2">
+                                                    <rect key="frame" x="15" y="12" width="123" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="0.00 B" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dAl-X4-c7g">
+                                                    <rect key="frame" x="313" y="12" width="47" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="PURSETTINGSROW3_3" textLabel="C8S-Pb-ijp" style="IBUITableViewCellStyleDefault" id="FRc-nE-NG9">
+                                        <rect key="frame" x="0.0" y="471" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FRc-nE-NG9" id="fOc-XZ-UZa">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Reset Statistics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C8S-Pb-ijp">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.14518705010414124" green="0.14518705010414124" blue="0.14518705010414124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ypn-HA-bAu" id="ZeN-Ts-KB4"/>
+                            <outlet property="delegate" destination="ypn-HA-bAu" id="tVk-OR-eB5"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Options" image="sliders_up_2" id="0Yx-HT-0zv"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <connections>
+                        <outlet property="adViewFrame" destination="YFI-1q-mY2" id="QM7-di-vfi"/>
+                        <outlet property="backgroundButtonLabel" destination="ttH-Nu-czJ" id="P3u-d0-NbA"/>
+                        <outlet property="currentBytesLabel" destination="DRO-Ft-QIi" id="ylG-b8-3i9"/>
+                        <outlet property="lifetimeBytesLabel" destination="dAl-X4-c7g" id="Fzm-pX-r09"/>
+                        <outlet property="reconnectOnWiFiSwitch" destination="p0l-ZG-qpk" id="Mdx-IQ-uZv"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jEG-QP-Dv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-144.80000000000001" y="830.73463268365822"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PlayBTN" width="128" height="128"/>
+        <image name="bg1" width="1024" height="1024"/>
+        <image name="music_note" width="32" height="32"/>
+        <image name="sliders_up_2" width="32" height="32"/>
+    </resources>
+</document>
