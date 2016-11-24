@@ -97,20 +97,29 @@
                                     <action selector="playPauseButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EVj-tR-Suo"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNw-HX-7ih" customClass="MPVolumeView">
+                                <rect key="frame" x="60" y="521" width="255" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Xc3-EZ-FkM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rLc-fW-Zpp" secondAttribute="trailing" constant="1" id="0ju-C0-JMr"/>
                             <constraint firstAttribute="top" secondItem="YF2-bM-AqY" secondAttribute="top" constant="-32" id="0xX-Oo-5VI"/>
+                            <constraint firstAttribute="trailing" secondItem="tNw-HX-7ih" secondAttribute="trailing" constant="60" id="GgL-Ih-1Mv"/>
                             <constraint firstAttribute="top" secondItem="y4t-lw-yn5" secondAttribute="top" constant="-83" id="I10-h7-gEL"/>
                             <constraint firstAttribute="bottom" secondItem="rLc-fW-Zpp" secondAttribute="bottom" constant="1" id="IV2-BF-fa7"/>
                             <constraint firstAttribute="top" secondItem="Hhr-eH-2hB" secondAttribute="top" constant="-145" id="Knm-EK-jqk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tNw-HX-7ih" secondAttribute="bottom" constant="69" id="VDD-D5-47S"/>
                             <constraint firstAttribute="centerX" secondItem="y4t-lw-yn5" secondAttribute="centerX" id="cvR-MX-t8K"/>
                             <constraint firstAttribute="centerX" secondItem="aWw-rZ-owL" secondAttribute="centerX" id="cwX-Jk-O9d"/>
                             <constraint firstAttribute="top" secondItem="rLc-fW-Zpp" secondAttribute="top" constant="1" id="dcv-m9-5un"/>
                             <constraint firstItem="y4t-lw-yn5" firstAttribute="centerX" secondItem="YF2-bM-AqY" secondAttribute="centerX" id="gMB-sz-S28"/>
                             <constraint firstAttribute="leading" secondItem="rLc-fW-Zpp" secondAttribute="leading" constant="1" id="hD3-5A-HNm"/>
                             <constraint firstAttribute="trailing" secondItem="Hhr-eH-2hB" secondAttribute="trailing" constant="10" id="iY2-nX-C7e"/>
+                            <constraint firstItem="tNw-HX-7ih" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="ro1-6g-2q6"/>
                             <constraint firstAttribute="leading" secondItem="Hhr-eH-2hB" secondAttribute="leading" constant="-10" id="yKr-0T-JH7"/>
                             <constraint firstAttribute="centerY" secondItem="aWw-rZ-owL" secondAttribute="centerY" constant="1" id="zc3-G5-Nb7"/>
                             <constraint firstAttribute="centerX" secondItem="YF2-bM-AqY" secondAttribute="centerX" id="zuG-WW-V2U"/>
@@ -230,7 +239,7 @@ to WiFi force a reconnection.</string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Statistics" footerTitle="Paws Up Radio - V2.5 - http://pawsupradio.com/" id="Xjm-Pb-DAO">
+                            <tableViewSection headerTitle="Statistics" footerTitle="Paws Up Radio - V2.5.1 - http://pawsupradio.com/" id="Xjm-Pb-DAO">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="PURSETTINGSROW3_1" textLabel="4ot-7y-KBA" detailTextLabel="DRO-Ft-QIi" style="IBUITableViewCellStyleValue1" id="PBy-Px-ylY">
                                         <rect key="frame" x="0.0" y="383" width="375" height="44"/>
